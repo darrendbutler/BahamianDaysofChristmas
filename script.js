@@ -39,8 +39,6 @@ function create() {
     ornament3.events.onDragStop.add(onDragStop, this);
 
     dragPosition = new Phaser.Point(ornament3.x, ornament3.y);
-
-    
 }
 
 function onOver(sprite, pointer) {
