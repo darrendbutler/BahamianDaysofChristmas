@@ -6,20 +6,22 @@ function preload() {
         'assets/sounds/theme-bahamian-days-of-christmas.mp3'
     ]);
 
-    this.load.image("tree", "assets/sprites/palm-tree.png")
+    this.load.image("tree", "assets/sprites/pngegg.png")
 
     
 }
 
 function create() {
-    this.add.image(200, 200, "background");
+    background = this.add.image(200, 200, "background");
+    background.setScale(1.5)
+    
     
     //music
     var music = this.sound.add('theme');
     music.play();
 
-    var tree = this.add.sprite("200", "200", "tree");
-    tree.scale = 0.5;
+    var tree = this.add.sprite("300", "250", "tree");
+    tree.setScale(0.2);
 
     
 }
